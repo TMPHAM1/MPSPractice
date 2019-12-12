@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<product version="3" modelHash="cf74xxq8wa8m4oashfheza3vfw3hfs3">
+  <files names="AbstractAccountConditions_Editor.java:AbstractAccountConditions_EditorBuilder_a.java:AccountLifeCycleStatus_Editor.java:AccountLifeCycleStatus_EditorBuilder_a.java:AccountManagementRules_Editor.java:AccountManagementRules_EditorBuilder_a.java:AggregateAccountList_Editor.java:AggregateAccountList_EditorBuilder_a.java:EditorAspectDescriptorImpl.java:Has_Editor.java:Has_EditorBuilder_a.java:Term_Editor.java:Term_EditorBuilder_a.java:Then_Editor.java:Then_EditorBuilder_a.java:When_Editor.java:When_EditorBuilder_a.java" />
+</product>
+
