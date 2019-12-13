@@ -37,6 +37,9 @@
       </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
+      <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
+        <property id="1193676396447" name="virtualPackage" index="3GE5qa" />
+      </concept>
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
       </concept>
@@ -60,7 +63,7 @@
   </node>
   <node concept="1TIwiD" id="1TwLtvW7_5A">
     <property role="EcuMT" value="2188966950340546918" />
-    <property role="TrG5h" value="AggregateAccountList" />
+    <property role="TrG5h" value="AggregateAccountEntities" />
     <ref role="1TJDcQ" node="1TwLtvW7MAS" resolve="AbstractAccountConditions" />
     <node concept="1TJgyj" id="1TwLtvW7MAV" role="1TKVEi">
       <property role="IQ2ns" value="2188966950340602299" />
@@ -73,6 +76,7 @@
   <node concept="1TIwiD" id="1TwLtvW7MAS">
     <property role="EcuMT" value="2188966950340602296" />
     <property role="TrG5h" value="AbstractAccountConditions" />
+    <property role="3GE5qa" value="" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="1TwLtvW92Wd" role="1TKVEi">
       <property role="IQ2ns" value="2188966950340931341" />
@@ -85,7 +89,7 @@
     <property role="EcuMT" value="2188966950340603406" />
     <property role="TrG5h" value="AccountLifeCycleStatus" />
     <property role="34LRSv" value="Account Life Cycle" />
-    <ref role="1TJDcQ" node="1TwLtvW8gFB" resolve="Entities" />
+    <ref role="1TJDcQ" node="1TwLtvW8gFB" resolve="Entity" />
     <node concept="1TJgyi" id="1TwLtvW7MT8" role="1TKVEl">
       <property role="IQ2nx" value="2188966950340603464" />
       <property role="TrG5h" value="status" />
@@ -129,19 +133,19 @@
       <property role="IQ2ns" value="2188966950340725477" />
       <property role="20lmBu" value="fLJjDmT/aggregation" />
       <property role="20kJfa" value="enitities" />
-      <property role="20lbJX" value="fLJekj5/_0__n" />
-      <ref role="20lvS9" node="1TwLtvW8gFB" resolve="Entities" />
+      <property role="20lbJX" value="fLJekj4/_1" />
+      <ref role="20lvS9" node="1TwLtvW8gFB" resolve="Entity" />
     </node>
   </node>
   <node concept="1TIwiD" id="1TwLtvW8gFB">
     <property role="EcuMT" value="2188966950340725479" />
-    <property role="TrG5h" value="Entities" />
+    <property role="TrG5h" value="Entity" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
   </node>
   <node concept="1TIwiD" id="1TwLtvW8gHj">
     <property role="EcuMT" value="2188966950340725587" />
     <property role="TrG5h" value="Term" />
-    <ref role="1TJDcQ" node="1TwLtvW8gFB" resolve="Entities" />
+    <ref role="1TJDcQ" node="1TwLtvW8gFB" resolve="Entity" />
     <node concept="1TJgyi" id="1TwLtvW8gHk" role="1TKVEl">
       <property role="IQ2nx" value="2188966950340725588" />
       <property role="TrG5h" value="term_name" />
@@ -179,14 +183,15 @@
       <property role="20lmBu" value="fLJjDmT/aggregation" />
       <property role="20kJfa" value="aggregateAccountConcepts" />
       <property role="20lbJX" value="fLJekj4/_1" />
-      <ref role="20lvS9" node="1TwLtvW7_5A" resolve="AggregateAccountList" />
+      <ref role="20lvS9" node="1TwLtvW7_5A" resolve="AggregateAccountEntities" />
     </node>
   </node>
   <node concept="1TIwiD" id="1TwLtvW9T2m">
     <property role="EcuMT" value="2188966950341152918" />
     <property role="TrG5h" value="FeeAmount" />
     <property role="34LRSv" value="Fee Amount" />
-    <ref role="1TJDcQ" node="1TwLtvW8gFB" resolve="Entities" />
+    <property role="3GE5qa" value="Term" />
+    <ref role="1TJDcQ" node="1TwLtvW8gFB" resolve="Entity" />
     <node concept="1TJgyi" id="1TwLtvW9T2n" role="1TKVEl">
       <property role="IQ2nx" value="2188966950341152919" />
       <property role="TrG5h" value="currency_code" />

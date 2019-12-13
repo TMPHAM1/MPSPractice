@@ -12,8 +12,8 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
   private ConceptPresentation props_AbstractAccountConditions;
   private ConceptPresentation props_AccountLifeCycleStatus;
   private ConceptPresentation props_AccountManagementRules;
-  private ConceptPresentation props_AggregateAccountList;
-  private ConceptPresentation props_Entities;
+  private ConceptPresentation props_AggregateAccountEntities;
+  private ConceptPresentation props_Entity;
   private ConceptPresentation props_FeeAmount;
   private ConceptPresentation props_Has;
   private ConceptPresentation props_Term;
@@ -46,20 +46,20 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           props_AccountManagementRules = cpb.create();
         }
         return props_AccountManagementRules;
-      case LanguageConceptSwitch.AggregateAccountList:
-        if (props_AggregateAccountList == null) {
+      case LanguageConceptSwitch.AggregateAccountEntities:
+        if (props_AggregateAccountEntities == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
-          cpb.rawPresentation("AggregateAccountList");
-          props_AggregateAccountList = cpb.create();
+          cpb.rawPresentation("AggregateAccountEntities");
+          props_AggregateAccountEntities = cpb.create();
         }
-        return props_AggregateAccountList;
-      case LanguageConceptSwitch.Entities:
-        if (props_Entities == null) {
+        return props_AggregateAccountEntities;
+      case LanguageConceptSwitch.Entity:
+        if (props_Entity == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
-          cpb.rawPresentation("Entities");
-          props_Entities = cpb.create();
+          cpb.rawPresentation("Entity");
+          props_Entity = cpb.create();
         }
-        return props_Entities;
+        return props_Entity;
       case LanguageConceptSwitch.FeeAmount:
         if (props_FeeAmount == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();

@@ -25,11 +25,11 @@ import jetbrains.mps.nodeEditor.cellMenu.SChildSubstituteInfo;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import org.jetbrains.mps.openapi.language.SConcept;
 
-/*package*/ class AggregateAccountList_EditorBuilder_a extends AbstractEditorBuilder {
+/*package*/ class AggregateAccountEntities_EditorBuilder_a extends AbstractEditorBuilder {
   @NotNull
   private SNode myNode;
 
-  public AggregateAccountList_EditorBuilder_a(@NotNull EditorContext context, @NotNull SNode node) {
+  public AggregateAccountEntities_EditorBuilder_a(@NotNull EditorContext context, @NotNull SNode node) {
     super(context);
     myNode = node;
   }
@@ -46,27 +46,28 @@ import org.jetbrains.mps.openapi.language.SConcept;
 
   private EditorCell createCollection_0() {
     EditorCell_Collection editorCell = new EditorCell_Collection(getEditorContext(), myNode, new CellLayout_Indent());
-    editorCell.setCellId("Collection_nbrdv4_a");
+    editorCell.setCellId("Collection_9sj1ny_a");
     editorCell.setBig(true);
     setCellContext(editorCell);
     editorCell.addEditorCell(createRefNodeList_0());
     return editorCell;
   }
   private EditorCell createRefNodeList_0() {
-    AbstractCellListHandler handler = new aggregateAccountRulesListHandler_nbrdv4_a0(myNode, getEditorContext());
+    AbstractCellListHandler handler = new aggregateAccountRulesListHandler_9sj1ny_a0(myNode, getEditorContext());
     EditorCell_Collection editorCell = handler.createCells(new CellLayout_Indent(), false);
     editorCell.setCellId("refNodeList_aggregateAccountRules");
     Style style = new StyleImpl();
     style.set(StyleAttributes.INDENT_LAYOUT_CHILDREN_NEWLINE, true);
+    style.set(StyleAttributes.INDENT_LAYOUT_NEW_LINE, true);
     editorCell.getStyle().putAll(style);
     editorCell.setSRole(handler.getElementSRole());
     return editorCell;
   }
-  private static class aggregateAccountRulesListHandler_nbrdv4_a0 extends RefNodeListHandler {
+  private static class aggregateAccountRulesListHandler_9sj1ny_a0 extends RefNodeListHandler {
     @NotNull
     private SNode myNode;
 
-    public aggregateAccountRulesListHandler_nbrdv4_a0(SNode ownerNode, EditorContext context) {
+    public aggregateAccountRulesListHandler_9sj1ny_a0(SNode ownerNode, EditorContext context) {
       super(context, false);
       myNode = ownerNode;
     }
@@ -89,7 +90,7 @@ import org.jetbrains.mps.openapi.language.SConcept;
     }
     public EditorCell createEmptyCell() {
       getCellFactory().pushCellContext();
-      getCellFactory().setNodeLocation(new SNodeLocation.FromParentAndLink(aggregateAccountRulesListHandler_nbrdv4_a0.this.getNode(), LINKS.aggregateAccountRules$Tmng));
+      getCellFactory().setNodeLocation(new SNodeLocation.FromParentAndLink(aggregateAccountRulesListHandler_9sj1ny_a0.this.getNode(), LINKS.aggregateAccountRules$Tmng));
       try {
         EditorCell emptyCell = null;
         emptyCell = super.createEmptyCell();

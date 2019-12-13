@@ -51,6 +51,11 @@
         <reference id="1166049300910" name="conceptDeclaration" index="1XX52x" />
       </concept>
     </language>
+    <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
+      <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
+        <property id="1193676396447" name="virtualPackage" index="3GE5qa" />
+      </concept>
+    </language>
   </registry>
   <node concept="24kQdi" id="1TwLtvW7_hu">
     <ref role="1XX52x" to="ellf:1TwLtvW7$Wm" resolve="AccountManagementRules" />
@@ -72,13 +77,16 @@
     </node>
   </node>
   <node concept="24kQdi" id="1TwLtvW7ME5">
-    <ref role="1XX52x" to="ellf:1TwLtvW7_5A" resolve="AggregateAccountList" />
+    <ref role="1XX52x" to="ellf:1TwLtvW7_5A" resolve="AggregateAccountEntities" />
     <node concept="3EZMnI" id="1TwLtvW7MHe" role="2wV5jI">
       <node concept="l2Vlx" id="1TwLtvW7MHh" role="2iSdaV" />
       <node concept="3F2HdR" id="1TwLtvW85Ww" role="3EZMnx">
         <ref role="1NtTu8" to="ellf:1TwLtvW7MAV" resolve="aggregateAccountRules" />
         <node concept="l2Vlx" id="1TwLtvW85Wy" role="2czzBx" />
         <node concept="pj6Ft" id="1TwLtvW85Xr" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+        <node concept="ljvvj" id="1TwLtvWc7bn" role="3F10Kt">
           <property role="VOm3f" value="true" />
         </node>
       </node>
@@ -119,6 +127,9 @@
       </node>
       <node concept="3F0A7n" id="1TwLtvW9oLp" role="3EZMnx">
         <ref role="1NtTu8" to="ellf:1TwLtvW9ksU" resolve="reason" />
+        <node concept="ljvvj" id="1TwLtvWdeRv" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
       </node>
       <node concept="l2Vlx" id="1TwLtvW7MTq" role="2iSdaV" />
     </node>
@@ -160,15 +171,8 @@
       <node concept="3F0ifn" id="1TwLtvW8gGh" role="3EZMnx">
         <property role="3F0ifm" value="Has" />
       </node>
-      <node concept="3F2HdR" id="1TwLtvW8gHd" role="3EZMnx">
+      <node concept="3F1sOY" id="1TwLtvWcY$H" role="3EZMnx">
         <ref role="1NtTu8" to="ellf:1TwLtvW8gF_" resolve="enitities" />
-        <node concept="l2Vlx" id="1TwLtvW8gHf" role="2czzBx" />
-        <node concept="ljvvj" id="1TwLtvW9bSR" role="3F10Kt">
-          <property role="VOm3f" value="true" />
-        </node>
-        <node concept="pj6Ft" id="1TwLtvW9bST" role="3F10Kt">
-          <property role="VOm3f" value="true" />
-        </node>
       </node>
       <node concept="l2Vlx" id="1TwLtvW8gFP" role="2iSdaV" />
     </node>
@@ -244,12 +248,50 @@
     </node>
   </node>
   <node concept="24kQdi" id="1TwLtvW92Wn">
+    <property role="3GE5qa" value="" />
     <ref role="1XX52x" to="ellf:1TwLtvW7MAS" resolve="AbstractAccountConditions" />
     <node concept="3EZMnI" id="1TwLtvW93io" role="2wV5jI">
       <node concept="3F1sOY" id="1TwLtvW93iv" role="3EZMnx">
         <ref role="1NtTu8" to="ellf:1TwLtvW92Wd" resolve="abstractAccountConditions" />
       </node>
       <node concept="l2Vlx" id="1TwLtvW93ir" role="2iSdaV" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="1TwLtvWab8$">
+    <property role="3GE5qa" value="Term" />
+    <ref role="1XX52x" to="ellf:1TwLtvW9T2m" resolve="FeeAmount" />
+    <node concept="3EZMnI" id="1TwLtvWabbf" role="2wV5jI">
+      <node concept="PMmxH" id="1TwLtvWahPv" role="3EZMnx">
+        <ref role="PMmxG" to="tpco:2wZex4PafBj" resolve="alias" />
+        <node concept="ljvvj" id="1TwLtvWahQR" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="3F0ifn" id="1TwLtvWabcH" role="3EZMnx">
+        <property role="3F0ifm" value="A currency type of " />
+        <node concept="lj46D" id="1TwLtvWahUx" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="3F0A7n" id="1TwLtvWabbL" role="3EZMnx">
+        <ref role="1NtTu8" to="ellf:1TwLtvW9T2n" resolve="currency_code" />
+        <node concept="ljvvj" id="1TwLtvWabj6" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="3F0ifn" id="1TwLtvWabmg" role="3EZMnx">
+        <property role="3F0ifm" value="A value of " />
+        <node concept="lj46D" id="1TwLtvWahVO" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="3F0A7n" id="1TwLtvWabni" role="3EZMnx">
+        <ref role="1NtTu8" to="ellf:1TwLtvW9T2p" resolve="value" />
+        <node concept="ljvvj" id="1TwLtvWc099" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="l2Vlx" id="1TwLtvWabbi" role="2iSdaV" />
     </node>
   </node>
 </model>

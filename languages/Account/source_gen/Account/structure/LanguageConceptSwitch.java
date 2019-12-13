@@ -12,8 +12,8 @@ public final class LanguageConceptSwitch {
   public static final int AbstractAccountConditions = 0;
   public static final int AccountLifeCycleStatus = 1;
   public static final int AccountManagementRules = 2;
-  public static final int AggregateAccountList = 3;
-  public static final int Entities = 4;
+  public static final int AggregateAccountEntities = 3;
+  public static final int Entity = 4;
   public static final int FeeAmount = 5;
   public static final int Has = 6;
   public static final int Term = 7;
@@ -25,8 +25,8 @@ public final class LanguageConceptSwitch {
     builder.put(0x1e60c5d7fc1f29b8L, AbstractAccountConditions);
     builder.put(0x1e60c5d7fc1f2e0eL, AccountLifeCycleStatus);
     builder.put(0x1e60c5d7fc1e4f16L, AccountManagementRules);
-    builder.put(0x1e60c5d7fc1e5166L, AggregateAccountList);
-    builder.put(0x1e60c5d7fc210ae7L, Entities);
+    builder.put(0x1e60c5d7fc1e5166L, AggregateAccountEntities);
+    builder.put(0x1e60c5d7fc210ae7L, Entity);
     builder.put(0x1e60c5d7fc279096L, FeeAmount);
     builder.put(0x1e60c5d7fc210ae4L, Has);
     builder.put(0x1e60c5d7fc210b53L, Term);

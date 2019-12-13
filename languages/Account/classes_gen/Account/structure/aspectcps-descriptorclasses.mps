@@ -231,7 +231,7 @@
       <property role="eg7rD" value="false" />
       <property role="34CwA1" value="false" />
       <property role="3TUv4t" value="false" />
-      <property role="TrG5h" value="props_AggregateAccountList" />
+      <property role="TrG5h" value="props_AggregateAccountEntities" />
       <node concept="3uibUv" id="l" role="1tU5fm">
         <ref role="3uigEE" to="ze1i:~ConceptPresentation" resolve="ConceptPresentation" />
       </node>
@@ -241,7 +241,7 @@
       <property role="eg7rD" value="false" />
       <property role="34CwA1" value="false" />
       <property role="3TUv4t" value="false" />
-      <property role="TrG5h" value="props_Entities" />
+      <property role="TrG5h" value="props_Entity" />
       <node concept="3uibUv" id="n" role="1tU5fm">
         <ref role="3uigEE" to="ze1i:~ConceptPresentation" resolve="ConceptPresentation" />
       </node>
@@ -587,7 +587,7 @@
                       <node concept="liA8E" id="2A" role="2OqNvi">
                         <ref role="37wK5l" to="ze1i:~ConceptPresentationBuilder.rawPresentation(java.lang.String)" resolve="rawPresentation" />
                         <node concept="Xl_RD" id="2B" role="37wK5m">
-                          <property role="Xl_RC" value="AggregateAccountList" />
+                          <property role="Xl_RC" value="AggregateAccountEntities" />
                           <node concept="cd27G" id="2D" role="lGtFl">
                             <node concept="3u3nmq" id="2E" role="cd27D">
                               <property role="3u3nmv" value="2188966950340546918" />
@@ -613,7 +613,7 @@
                         </node>
                       </node>
                       <node concept="37vLTw" id="2I" role="37vLTJ">
-                        <ref role="3cqZAo" node="5" resolve="props_AggregateAccountList" />
+                        <ref role="3cqZAo" node="5" resolve="props_AggregateAccountEntities" />
                       </node>
                     </node>
                   </node>
@@ -621,19 +621,19 @@
                 <node concept="3clFbC" id="2s" role="3clFbw">
                   <node concept="10Nm6u" id="2L" role="3uHU7w" />
                   <node concept="37vLTw" id="2M" role="3uHU7B">
-                    <ref role="3cqZAo" node="5" resolve="props_AggregateAccountList" />
+                    <ref role="3cqZAo" node="5" resolve="props_AggregateAccountEntities" />
                   </node>
                 </node>
               </node>
               <node concept="3cpWs6" id="2q" role="3cqZAp">
                 <node concept="37vLTw" id="2N" role="3cqZAk">
-                  <ref role="3cqZAo" node="5" resolve="props_AggregateAccountList" />
+                  <ref role="3cqZAo" node="5" resolve="props_AggregateAccountEntities" />
                 </node>
               </node>
             </node>
             <node concept="10M0yZ" id="2o" role="3Kbmr1">
               <ref role="1PxDUh" node="5E" resolve="LanguageConceptSwitch" />
-              <ref role="3cqZAo" node="5J" resolve="AggregateAccountList" />
+              <ref role="3cqZAo" node="5J" resolve="AggregateAccountEntities" />
             </node>
           </node>
           <node concept="3KbdKl" id="U" role="3KbHQx">
@@ -661,7 +661,7 @@
                       <node concept="liA8E" id="33" role="2OqNvi">
                         <ref role="37wK5l" to="ze1i:~ConceptPresentationBuilder.rawPresentation(java.lang.String)" resolve="rawPresentation" />
                         <node concept="Xl_RD" id="34" role="37wK5m">
-                          <property role="Xl_RC" value="Entities" />
+                          <property role="Xl_RC" value="Entity" />
                           <node concept="cd27G" id="36" role="lGtFl">
                             <node concept="3u3nmq" id="37" role="cd27D">
                               <property role="3u3nmv" value="2188966950340725479" />
@@ -687,7 +687,7 @@
                         </node>
                       </node>
                       <node concept="37vLTw" id="3b" role="37vLTJ">
-                        <ref role="3cqZAo" node="6" resolve="props_Entities" />
+                        <ref role="3cqZAo" node="6" resolve="props_Entity" />
                       </node>
                     </node>
                   </node>
@@ -695,19 +695,19 @@
                 <node concept="3clFbC" id="2T" role="3clFbw">
                   <node concept="10Nm6u" id="3e" role="3uHU7w" />
                   <node concept="37vLTw" id="3f" role="3uHU7B">
-                    <ref role="3cqZAo" node="6" resolve="props_Entities" />
+                    <ref role="3cqZAo" node="6" resolve="props_Entity" />
                   </node>
                 </node>
               </node>
               <node concept="3cpWs6" id="2R" role="3cqZAp">
                 <node concept="37vLTw" id="3g" role="3cqZAk">
-                  <ref role="3cqZAo" node="6" resolve="props_Entities" />
+                  <ref role="3cqZAo" node="6" resolve="props_Entity" />
                 </node>
               </node>
             </node>
             <node concept="10M0yZ" id="2P" role="3Kbmr1">
               <ref role="1PxDUh" node="5E" resolve="LanguageConceptSwitch" />
-              <ref role="3cqZAo" node="5K" resolve="Entities" />
+              <ref role="3cqZAo" node="5K" resolve="Entity" />
             </node>
           </node>
           <node concept="3KbdKl" id="V" role="3KbHQx">
@@ -1166,7 +1166,7 @@
       <property role="2dlcS1" value="false" />
       <property role="2dld4O" value="false" />
       <property role="3TUv4t" value="true" />
-      <property role="TrG5h" value="AggregateAccountList" />
+      <property role="TrG5h" value="AggregateAccountEntities" />
       <node concept="3Tm1VV" id="68" role="1B3o_S" />
       <node concept="10Oyi0" id="69" role="1tU5fm" />
       <node concept="3cmrfG" id="6a" role="33vP2m">
@@ -1177,7 +1177,7 @@
       <property role="2dlcS1" value="false" />
       <property role="2dld4O" value="false" />
       <property role="3TUv4t" value="true" />
-      <property role="TrG5h" value="Entities" />
+      <property role="TrG5h" value="Entity" />
       <node concept="3Tm1VV" id="6b" role="1B3o_S" />
       <node concept="10Oyi0" id="6c" role="1tU5fm" />
       <node concept="3cmrfG" id="6d" role="33vP2m">
@@ -1322,7 +1322,7 @@
                 <property role="1adDun" value="0x1e60c5d7fc1e5166L" />
               </node>
               <node concept="37vLTw" id="75" role="37wK5m">
-                <ref role="3cqZAo" node="5J" resolve="AggregateAccountList" />
+                <ref role="3cqZAo" node="5J" resolve="AggregateAccountEntities" />
               </node>
             </node>
           </node>
@@ -1338,7 +1338,7 @@
                 <property role="1adDun" value="0x1e60c5d7fc210ae7L" />
               </node>
               <node concept="37vLTw" id="7a" role="37wK5m">
-                <ref role="3cqZAo" node="5K" resolve="Entities" />
+                <ref role="3cqZAo" node="5K" resolve="Entity" />
               </node>
             </node>
           </node>
@@ -1540,24 +1540,24 @@
       <property role="eg7rD" value="false" />
       <property role="34CwA1" value="false" />
       <property role="3TUv4t" value="true" />
-      <property role="TrG5h" value="myConceptAggregateAccountList" />
+      <property role="TrG5h" value="myConceptAggregateAccountEntities" />
       <node concept="3uibUv" id="8C" role="1tU5fm">
         <ref role="3uigEE" to="ze1i:~ConceptDescriptor" resolve="ConceptDescriptor" />
       </node>
       <node concept="1rXfSq" id="8D" role="33vP2m">
-        <ref role="37wK5l" node="8r" resolve="createDescriptorForAggregateAccountList" />
+        <ref role="37wK5l" node="8r" resolve="createDescriptorForAggregateAccountEntities" />
       </node>
     </node>
     <node concept="312cEg" id="82" role="jymVt">
       <property role="eg7rD" value="false" />
       <property role="34CwA1" value="false" />
       <property role="3TUv4t" value="true" />
-      <property role="TrG5h" value="myConceptEntities" />
+      <property role="TrG5h" value="myConceptEntity" />
       <node concept="3uibUv" id="8E" role="1tU5fm">
         <ref role="3uigEE" to="ze1i:~ConceptDescriptor" resolve="ConceptDescriptor" />
       </node>
       <node concept="1rXfSq" id="8F" role="33vP2m">
-        <ref role="37wK5l" node="8s" resolve="createDescriptorForEntities" />
+        <ref role="37wK5l" node="8s" resolve="createDescriptorForEntity" />
       </node>
     </node>
     <node concept="312cEg" id="83" role="jymVt">
@@ -1706,10 +1706,10 @@
               <ref role="3cqZAo" node="80" resolve="myConceptAccountManagementRules" />
             </node>
             <node concept="37vLTw" id="9m" role="37wK5m">
-              <ref role="3cqZAo" node="81" resolve="myConceptAggregateAccountList" />
+              <ref role="3cqZAo" node="81" resolve="myConceptAggregateAccountEntities" />
             </node>
             <node concept="37vLTw" id="9n" role="37wK5m">
-              <ref role="3cqZAo" node="82" resolve="myConceptEntities" />
+              <ref role="3cqZAo" node="82" resolve="myConceptEntity" />
             </node>
             <node concept="37vLTw" id="9o" role="37wK5m">
               <ref role="3cqZAo" node="83" resolve="myConceptFeeAmount" />
@@ -1798,26 +1798,26 @@
             <node concept="3clFbS" id="9Y" role="3Kbo56">
               <node concept="3cpWs6" id="a0" role="3cqZAp">
                 <node concept="37vLTw" id="a1" role="3cqZAk">
-                  <ref role="3cqZAo" node="81" resolve="myConceptAggregateAccountList" />
+                  <ref role="3cqZAo" node="81" resolve="myConceptAggregateAccountEntities" />
                 </node>
               </node>
             </node>
             <node concept="10M0yZ" id="9Z" role="3Kbmr1">
               <ref role="1PxDUh" node="5E" resolve="LanguageConceptSwitch" />
-              <ref role="3cqZAo" node="5J" resolve="AggregateAccountList" />
+              <ref role="3cqZAo" node="5J" resolve="AggregateAccountEntities" />
             </node>
           </node>
           <node concept="3KbdKl" id="9E" role="3KbHQx">
             <node concept="3clFbS" id="a2" role="3Kbo56">
               <node concept="3cpWs6" id="a4" role="3cqZAp">
                 <node concept="37vLTw" id="a5" role="3cqZAk">
-                  <ref role="3cqZAo" node="82" resolve="myConceptEntities" />
+                  <ref role="3cqZAo" node="82" resolve="myConceptEntity" />
                 </node>
               </node>
             </node>
             <node concept="10M0yZ" id="a3" role="3Kbmr1">
               <ref role="1PxDUh" node="5E" resolve="LanguageConceptSwitch" />
-              <ref role="3cqZAo" node="5K" resolve="Entities" />
+              <ref role="3cqZAo" node="5K" resolve="Entity" />
             </node>
           </node>
           <node concept="3KbdKl" id="9F" role="3KbHQx">
@@ -2171,7 +2171,7 @@
             <node concept="liA8E" id="c8" role="2OqNvi">
               <ref role="37wK5l" to="bzg8:~ConceptDescriptorBuilder2.super_(java.lang.String,long,long,long)" resolve="super_" />
               <node concept="Xl_RD" id="c9" role="37wK5m">
-                <property role="Xl_RC" value="Account.structure.Entities" />
+                <property role="Xl_RC" value="Account.structure.Entity" />
               </node>
               <node concept="1adDum" id="ca" role="37wK5m">
                 <property role="1adDun" value="0x1b5f79a9a6464e86L" />
@@ -2535,7 +2535,7 @@
       <property role="od$2w" value="false" />
       <property role="DiZV1" value="false" />
       <property role="2aFKle" value="false" />
-      <property role="TrG5h" value="createDescriptorForAggregateAccountList" />
+      <property role="TrG5h" value="createDescriptorForAggregateAccountEntities" />
       <node concept="3clFbS" id="e5" role="3clF47">
         <node concept="3cpWs8" id="e8" role="3cqZAp">
           <node concept="3cpWsn" id="ef" role="3cpWs9">
@@ -2550,7 +2550,7 @@
                   <property role="Xl_RC" value="Account" />
                 </node>
                 <node concept="Xl_RD" id="ek" role="37wK5m">
-                  <property role="Xl_RC" value="AggregateAccountList" />
+                  <property role="Xl_RC" value="AggregateAccountEntities" />
                 </node>
                 <node concept="1adDum" id="el" role="37wK5m">
                   <property role="1adDun" value="0x1b5f79a9a6464e86L" />
@@ -2713,7 +2713,7 @@
       <property role="od$2w" value="false" />
       <property role="DiZV1" value="false" />
       <property role="2aFKle" value="false" />
-      <property role="TrG5h" value="createDescriptorForEntities" />
+      <property role="TrG5h" value="createDescriptorForEntity" />
       <node concept="3clFbS" id="f8" role="3clF47">
         <node concept="3cpWs8" id="fb" role="3cqZAp">
           <node concept="3cpWsn" id="fg" role="3cpWs9">
@@ -2728,7 +2728,7 @@
                   <property role="Xl_RC" value="Account" />
                 </node>
                 <node concept="Xl_RD" id="fl" role="37wK5m">
-                  <property role="Xl_RC" value="Entities" />
+                  <property role="Xl_RC" value="Entity" />
                 </node>
                 <node concept="1adDum" id="fm" role="37wK5m">
                   <property role="1adDun" value="0x1b5f79a9a6464e86L" />
@@ -2853,7 +2853,7 @@
             <node concept="liA8E" id="g7" role="2OqNvi">
               <ref role="37wK5l" to="bzg8:~ConceptDescriptorBuilder2.super_(java.lang.String,long,long,long)" resolve="super_" />
               <node concept="Xl_RD" id="g8" role="37wK5m">
-                <property role="Xl_RC" value="Account.structure.Entities" />
+                <property role="Xl_RC" value="Account.structure.Entity" />
               </node>
               <node concept="1adDum" id="g9" role="37wK5m">
                 <property role="1adDun" value="0x1b5f79a9a6464e86L" />
@@ -3129,9 +3129,7 @@
                     </node>
                     <node concept="liA8E" id="hB" role="2OqNvi">
                       <ref role="37wK5l" to="bzg8:~ConceptDescriptorBuilder2$AggregationLinkBuilder.optional(boolean)" resolve="optional" />
-                      <node concept="3clFbT" id="hL" role="37wK5m">
-                        <property role="3clFbU" value="true" />
-                      </node>
+                      <node concept="3clFbT" id="hL" role="37wK5m" />
                     </node>
                   </node>
                   <node concept="liA8E" id="h_" role="2OqNvi">
@@ -3143,9 +3141,7 @@
                 </node>
                 <node concept="liA8E" id="hz" role="2OqNvi">
                   <ref role="37wK5l" to="bzg8:~ConceptDescriptorBuilder2$AggregationLinkBuilder.multiple(boolean)" resolve="multiple" />
-                  <node concept="3clFbT" id="hN" role="37wK5m">
-                    <property role="3clFbU" value="true" />
-                  </node>
+                  <node concept="3clFbT" id="hN" role="37wK5m" />
                 </node>
               </node>
               <node concept="liA8E" id="hx" role="2OqNvi">
@@ -3231,7 +3227,7 @@
             <node concept="liA8E" id="in" role="2OqNvi">
               <ref role="37wK5l" to="bzg8:~ConceptDescriptorBuilder2.super_(java.lang.String,long,long,long)" resolve="super_" />
               <node concept="Xl_RD" id="io" role="37wK5m">
-                <property role="Xl_RC" value="Account.structure.Entities" />
+                <property role="Xl_RC" value="Account.structure.Entity" />
               </node>
               <node concept="1adDum" id="ip" role="37wK5m">
                 <property role="1adDun" value="0x1b5f79a9a6464e86L" />
