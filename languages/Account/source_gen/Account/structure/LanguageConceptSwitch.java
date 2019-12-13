@@ -14,10 +14,11 @@ public final class LanguageConceptSwitch {
   public static final int AccountManagementRules = 2;
   public static final int AggregateAccountList = 3;
   public static final int Entities = 4;
-  public static final int Has = 5;
-  public static final int Term = 6;
-  public static final int Then = 7;
-  public static final int When = 8;
+  public static final int FeeAmount = 5;
+  public static final int Has = 6;
+  public static final int Term = 7;
+  public static final int Then = 8;
+  public static final int When = 9;
 
   public LanguageConceptSwitch() {
     LanguageConceptIndexBuilder builder = new LanguageConceptIndexBuilder(0x1b5f79a9a6464e86L, 0xb0dcaa13ea6dc8d2L);
@@ -26,6 +27,7 @@ public final class LanguageConceptSwitch {
     builder.put(0x1e60c5d7fc1e4f16L, AccountManagementRules);
     builder.put(0x1e60c5d7fc1e5166L, AggregateAccountList);
     builder.put(0x1e60c5d7fc210ae7L, Entities);
+    builder.put(0x1e60c5d7fc279096L, FeeAmount);
     builder.put(0x1e60c5d7fc210ae4L, Has);
     builder.put(0x1e60c5d7fc210b53L, Term);
     builder.put(0x1e60c5d7fc224f14L, Then);

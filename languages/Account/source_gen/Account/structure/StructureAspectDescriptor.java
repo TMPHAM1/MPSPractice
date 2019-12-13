@@ -19,6 +19,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
   /*package*/ final ConceptDescriptor myConceptAccountManagementRules = createDescriptorForAccountManagementRules();
   /*package*/ final ConceptDescriptor myConceptAggregateAccountList = createDescriptorForAggregateAccountList();
   /*package*/ final ConceptDescriptor myConceptEntities = createDescriptorForEntities();
+  /*package*/ final ConceptDescriptor myConceptFeeAmount = createDescriptorForFeeAmount();
   /*package*/ final ConceptDescriptor myConceptHas = createDescriptorForHas();
   /*package*/ final ConceptDescriptor myConceptTerm = createDescriptorForTerm();
   /*package*/ final ConceptDescriptor myConceptThen = createDescriptorForThen();
@@ -37,7 +38,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
 
   @Override
   public Collection<ConceptDescriptor> getDescriptors() {
-    return Arrays.asList(myConceptAbstractAccountConditions, myConceptAccountLifeCycleStatus, myConceptAccountManagementRules, myConceptAggregateAccountList, myConceptEntities, myConceptHas, myConceptTerm, myConceptThen, myConceptWhen);
+    return Arrays.asList(myConceptAbstractAccountConditions, myConceptAccountLifeCycleStatus, myConceptAccountManagementRules, myConceptAggregateAccountList, myConceptEntities, myConceptFeeAmount, myConceptHas, myConceptTerm, myConceptThen, myConceptWhen);
   }
 
   @Override
@@ -54,6 +55,8 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
         return myConceptAggregateAccountList;
       case LanguageConceptSwitch.Entities:
         return myConceptEntities;
+      case LanguageConceptSwitch.FeeAmount:
+        return myConceptFeeAmount;
       case LanguageConceptSwitch.Has:
         return myConceptHas;
       case LanguageConceptSwitch.Term:
@@ -121,6 +124,17 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.version(2);
     return b.create();
   }
+  private static ConceptDescriptor createDescriptorForFeeAmount() {
+    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("Account", "FeeAmount", 0x1b5f79a9a6464e86L, 0xb0dcaa13ea6dc8d2L, 0x1e60c5d7fc279096L);
+    b.class_(false, false, false);
+    b.super_("Account.structure.Entities", 0x1b5f79a9a6464e86L, 0xb0dcaa13ea6dc8d2L, 0x1e60c5d7fc210ae7L);
+    b.origin("r:38998900-57ad-4c8d-8c09-fb9bd5f059c5(Account.structure)/2188966950341152918");
+    b.version(2);
+    b.property("currency_code", 0x1e60c5d7fc279097L).type(PrimitiveTypeId.STRING).origin("2188966950341152919").done();
+    b.property("value", 0x1e60c5d7fc279099L).type(PrimitiveTypeId.INTEGER).origin("2188966950341152921").done();
+    b.alias("Fee Amount");
+    return b.create();
+  }
   private static ConceptDescriptor createDescriptorForHas() {
     ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("Account", "Has", 0x1b5f79a9a6464e86L, 0xb0dcaa13ea6dc8d2L, 0x1e60c5d7fc210ae4L);
     b.class_(false, false, false);
@@ -140,6 +154,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.property("term_type", 0x1e60c5d7fc210b56L).type(PrimitiveTypeId.STRING).origin("2188966950340725590").done();
     b.property("term_id", 0x1e60c5d7fc210b59L).type(PrimitiveTypeId.STRING).origin("2188966950340725593").done();
     b.property("calculation_method", 0x1e60c5d7fc210b5dL).type(PrimitiveTypeId.STRING).origin("2188966950340725597").done();
+    b.aggregate("AdditionalEntites", 0x1e60c5d7fc2793abL).target(0x1b5f79a9a6464e86L, 0xb0dcaa13ea6dc8d2L, 0x1e60c5d7fc210ae4L).optional(true).ordered(true).multiple(true).origin("2188966950341153707").done();
     return b.create();
   }
   private static ConceptDescriptor createDescriptorForThen() {

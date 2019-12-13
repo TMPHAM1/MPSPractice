@@ -162,6 +162,13 @@
       <property role="TrG5h" value="calculation_method" />
       <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
     </node>
+    <node concept="1TJgyj" id="1TwLtvW9TeF" role="1TKVEi">
+      <property role="IQ2ns" value="2188966950341153707" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="AdditionalEntites" />
+      <property role="20lbJX" value="fLJekj5/_0__n" />
+      <ref role="20lvS9" node="1TwLtvW8gF$" resolve="Has" />
+    </node>
   </node>
   <node concept="1TIwiD" id="1TwLtvW8$Wk">
     <property role="EcuMT" value="2188966950340808468" />
@@ -178,15 +185,16 @@
   <node concept="1TIwiD" id="1TwLtvW9T2m">
     <property role="EcuMT" value="2188966950341152918" />
     <property role="TrG5h" value="FeeAmount" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <property role="34LRSv" value="Fee Amount" />
+    <ref role="1TJDcQ" node="1TwLtvW8gFB" resolve="Entities" />
     <node concept="1TJgyi" id="1TwLtvW9T2n" role="1TKVEl">
       <property role="IQ2nx" value="2188966950341152919" />
-      <property role="TrG5h" value="currencyType" />
+      <property role="TrG5h" value="currency_code" />
       <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
     </node>
     <node concept="1TJgyi" id="1TwLtvW9T2p" role="1TKVEl">
       <property role="IQ2nx" value="2188966950341152921" />
-      <property role="TrG5h" value="amount" />
+      <property role="TrG5h" value="value" />
       <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
     </node>
   </node>

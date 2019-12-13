@@ -14,6 +14,7 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
   private ConceptPresentation props_AccountManagementRules;
   private ConceptPresentation props_AggregateAccountList;
   private ConceptPresentation props_Entities;
+  private ConceptPresentation props_FeeAmount;
   private ConceptPresentation props_Has;
   private ConceptPresentation props_Term;
   private ConceptPresentation props_Then;
@@ -59,6 +60,13 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           props_Entities = cpb.create();
         }
         return props_Entities;
+      case LanguageConceptSwitch.FeeAmount:
+        if (props_FeeAmount == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.rawPresentation("Fee Amount");
+          props_FeeAmount = cpb.create();
+        }
+        return props_FeeAmount;
       case LanguageConceptSwitch.Has:
         if (props_Has == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();

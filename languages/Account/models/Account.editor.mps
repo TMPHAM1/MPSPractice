@@ -214,6 +214,16 @@
       </node>
       <node concept="3F0A7n" id="1TwLtvW8gPA" role="3EZMnx">
         <ref role="1NtTu8" to="ellf:1TwLtvW8gHt" resolve="calculation_method" />
+        <node concept="ljvvj" id="1TwLtvW9Tix" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="3F2HdR" id="1TwLtvW9Tpp" role="3EZMnx">
+        <ref role="1NtTu8" to="ellf:1TwLtvW9TeF" resolve="AdditionalEntites" />
+        <node concept="l2Vlx" id="1TwLtvW9Tpr" role="2czzBx" />
+        <node concept="lj46D" id="1TwLtvW9Zyv" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
       </node>
       <node concept="l2Vlx" id="1TwLtvW8gHT" role="2iSdaV" />
     </node>
